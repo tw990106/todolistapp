@@ -29,7 +29,7 @@ h1{
     margin-bottom: 20px;
 }
 #task-input{
-    width: 70%;
+    width: 80%;
     border: 1px solid #ebebe6;
     padding: 5px;
     box-sizing: border-box;
@@ -55,6 +55,7 @@ h1{
     display: flex;
     border-bottom: 1px solid #ebebe6;
     position: relative;
+    max-width: 80%;
 }
 .task-tabs div{
     cursor: pointer;
