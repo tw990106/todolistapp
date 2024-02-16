@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800&family=Noto+Sans+KR:wght@100..900&family=Permanent+Marker&family=Protest+Riot&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #e5a395;
+    height: 100vh;
+}
+
+.container{
+    background-color: white;
+    min-height: 90%;
+    max-width: 80%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 50px 30px;
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+h1{
+    margin-bottom: 30px;
+    font-family: "Permanent Marker", cursive;
+    color: #DB5F45;
+}
+.input-area{
+    margin-bottom: 20px;
+}
+#task-input{
+    width: 70%;
+    border: 1px solid #ebebe6;
+    padding: 5px;
+    box-sizing: border-box;
+    outline-color: #e5a395;
+}
+.input-area button{
+    padding: 5px 10px;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 1px solid #ebebe6;
+    color: #333;
+}
+.input-area button:hover{
+    border: 1px solid #e5a395;
+    color: #e5a395;
+}
+
+.task-area{
+    border: 1px solid #ebebe6;
+}
+
+.task-tabs{
+    display: flex;
+    border-bottom: 1px solid #ebebe6;
+    position: relative;
+}
+.task-tabs div{
+    cursor: pointer;
+}
+.task-tabs div:not(:first-child){
+    padding: 1em;
+}
+.task{
+    padding: 10px 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.task button{
+    background-color: transparent;
+    border: none;
+    font-size: 1.4rem;
+    box-sizing: border-box;
+    color: #e5a395;
+    margin-left: 15px;
+}
+.task button:hover{
+    color: #DB5F45;
+}
+
+#under-line{
+    height: 4px;
+    background-color: lightcoral;
+    position: absolute;
+    width: 50px;
+    left: 0;
+    top: 52px;
+    transition: .7s;
+}
+
+.task-done{
+    text-decoration: line-through;
+}
+
+.tape1{
+    max-width: 80%;
+    transform: rotate(-300deg);
+    position: absolute;
+    right: 5%;
+    top: 50px;
+}
+.tape2{
+    max-width: 80%;
+    transform: rotate(-300deg);
+    position: absolute;
+    left: 5%;
+    bottom: 50px;
+
+}
