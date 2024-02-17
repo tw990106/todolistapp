@@ -76,17 +76,17 @@ function toggleComplete(id){
             break;
         }
     }
-    render();
+    filter();
 }
 
 function deleteTask(id){
     for(let i=0; i<filterList.length; i++){
-        if(filterList[i].id == id){
-            filterList.splice(i,1);
+        if(taskList[i].id == id){
+            taskList.splice(i,1);
             break;
         }
     }
-    render();
+    filter();
 }
 
 function filter(event){
